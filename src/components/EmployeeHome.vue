@@ -177,6 +177,9 @@ export default {
             </tr>
           </tbody>
         </table>
+        <div class="no-emp" v-if="Object.keys(empOrg).length === 0">
+          No Employees present. Please add Employees by clicking add icon.
+        </div>
       </div>
     </div>
 
@@ -294,5 +297,11 @@ button {
   border: 1px solid black;
   padding: 5px;
   cursor: pointer;
+}
+
+.no-emp {
+  text-align: center;
+  color: lightcoral;
+  padding: 30px;
 }
 </style>
